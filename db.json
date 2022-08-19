@@ -1,0 +1,111 @@
+{
+    "categories":[
+        {
+            "name":"python",
+            "brief":"Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to both beginners and advanced developers alike.",
+            "courses": [
+                {
+                    "id": 0,
+                    "title": "Learn Python: The Complete Python Programming Course",
+                    "cover-image": "images/Screenshot 2022-08-04 225233.png",
+                    "instructor": "Avinash Jain, The Codex",
+                    "rate": "4.4",
+                    "price": "199.99",
+                    "old-price": "679.99"
+                },
+                {
+                    "id": 1,
+                    "title":"Learning Python for Data Analysis and Visualization",
+                    "cover-image": "images/Screenshot 2022-08-04 225212.png",
+                    "instructor": "Jose Portilla",
+                    "rate": "4.4",
+                    "price": "269.99",
+                    "old-price": "1599.99"
+                },
+                {
+                    "id": 2,
+                    "title":"Python for Beginners - Learn Programming from scratch",
+                    "cover-image": "images/Screenshot 2022-08-04 225257.png",
+                    "instructor": "Abrar Hussain",
+                    "rate": "4.4",
+                    "price": "199.99",
+                    "old-price": "679.99"
+                },
+                {
+                    "id": 3,
+                    "title":"Python Beyond the Basics - Object-Oriented Programming",
+                    "cover-image": "images/Screenshot 2022-08-04 225313.png",
+                    "instructor": "Infinite Skills",
+                    "rate": "4.4",
+                    "price": "269.99",
+                    "old-price": "599.99"
+                },
+                {
+                    "id": 4,
+                    "title":"Learn Python: Python for Beginners",
+                    "cover-image": "images/Screenshot 2022-08-04 225257.png",
+                    "instructor": "Abrar Hussain",
+                    "rate": "4.4",
+                    "price": "199.99",
+                    "old-price": "599.99"
+                }
+            ]
+
+        },
+        {
+            "name":"excel",
+            "brief":"Take one of Udemy’s range of Excel courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to both beginners and advanced developers alike.",
+            "courses": [
+                {
+                    "id": 0,
+                    "title": "Learn Python: The Complete Python Programming Course",
+                    "cover-image": "images/Screenshot 2022-08-04 225233.png",
+                    "instructor": "Avinash Jain, The Codex",
+                    "rate": "4.4",
+                    "price": "199.99",
+                    "old-price": "679.99"
+                },
+                {
+                    "id": 1,
+                    "title":"Learning Python for Data Analysis and Visualization",
+                    "cover-image": "images/Screenshot 2022-08-04 225212.png",
+                    "instructor": "Jose Portilla",
+                    "rate": "4.4",
+                    "price": "269.99",
+                    "old-price": "1599.99"
+                },
+                {
+                    "id": 2,
+                    "title":"Python for Beginners - Learn Programming from scratch",
+                    "cover-image": "images/Screenshot 2022-08-04 225257.png",
+                    "instructor": "Abrar Hussain",
+                    "rate": "4.4",
+                    "price": "199.99",
+                    "old-price": "679.99"
+                },
+                {
+                    "id": 3,
+                    "title":"Python Beyond the Basics - Object-Oriented Programming",
+                    "cover-image": "images/Screenshot 2022-08-04 225313.png",
+                    "instructor": "Infinite Skills",
+                    "rate": "4.4",
+                    "price": "269.99",
+                    "old-price": "599.99"
+                },
+                {
+                    "id": 4,
+                    "title":"Learn Python: Python for Beginners",
+                    "cover-image": "images/Screenshot 2022-08-04 225257.png",
+                    "instructor": "Abrar Hussain",
+                    "rate": "4.4",
+                    "price": "199.99",
+                    "old-price": "599.99"
+                }
+            ]
+
+        }
+        
+    ]
+    
+}
+
