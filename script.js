@@ -6,15 +6,22 @@ const get_courses=async ()=>{
 }
 
 function search(){
+    console.log("searching...");
     const search=document.querySelector(".search-input").value;
-    const courses_element=document.querySelector(".py-crses");
+    if(document.querySelector(".nav-tabs")!=null)
+        document.querySelector("main").removeChild(document.querySelector(".nav-tabs"));
+    const results_panel=document.querySelector(".tab-content");
+    const courses_element=document.createElement("div");
+    courses_element.classList.add("py-crses")
     
-    while (courses_element.firstChild) {
-        courses_element.removeChild(courses_element.lastChild);
+    while (results_panel.firstChild) {
+        results_panel.removeChild(results_panel.lastChild);
     }
     json2.then((json)=>{
-        json=json[0]["courses"]
-        const courses_element=document.querySelector(".py-crses");
+        json_orig=json;
+
+        for (let i in json_orig){
+            json=json[i]["courses"];
         for (const course_key in json){
             const course=json[course_key];
             if(!(course["title"].toLowerCase().includes(search.toLowerCase())))continue;
@@ -45,6 +52,7 @@ function search(){
             rate_label.textContent=course["rate"];
             rate.appendChild(rate_label);
             const rate_stars=document.createElement("img");
+            rate_stars.classList.add("img");
             rate_stars.setAttribute("src","images/4_5_StarRating.png");
             rate.appendChild(rate_stars);
     
@@ -61,6 +69,10 @@ function search(){
             courses_element.appendChild(newcourse_element);
     
         }
+        }
+        
+
+        results_panel.appendChild(courses_element);
     })
 }
 let width_body=document.body.clientWidth;
@@ -76,6 +88,7 @@ if(width_body<=990&&width_body>=500){
 }
 let json2=get_courses();
 json2.then((json)=>{
+    console.log(json);
     for(const cat in json){
         //TODO add tabs per category
         const tabs_element=document.querySelector("#myTab");
